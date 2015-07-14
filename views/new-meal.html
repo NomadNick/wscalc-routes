@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="six columns details">
+    <div class="heading">
+      <h4>Enter the Meal Details</h4>
+    </div>
+
+    <div id="form">
+      <form name="myForm" novalidate class="meal_details" ng-submit="submit()">
+        <fieldset>
+
+            <label for="meal_price">Base Meal Price: $</label>
+            <input type="number" name="meal_price" ng-model="meal_price"  required ng-pattern="/^\d+$/"/>
+
+            <label for="tax_rate">Tax Rate: %</label>
+            <input type="number" name="tax_rate" ng-model="tax_rate" required ng-pattern="/^\d+$/"/>
+
+            <label for="tip_percentage">Tip Percentage: %</label>
+            <input type="number" name="tip_percentage" ng-model="tip_percentage" required ng-pattern="/^\d+$/"/>
+
+        </fieldset>
+
+            <span class="error" ng-if="myForm.$submitted && myForm.meal_price.$error.required">Please Only Enter Numbers</span>
+
+        <input type="submit" value="Submit" id="submit"/>
+
+        <input type="submit" value="Cancel" id="cancel" ng-click="cancel()">
+
+
+      </form>
+    </div>
+
+  </div>
+
+  <div class="six columns charges">
+    <div class="heading">
+      <h4>Customer Charges</h4>
+    </div>
+    <div class="customerCharges">
+    <p>Subtotal: {{ subtotal | currency }}</p>
+    <p>Tip: {{ tip | currency }}</p>
+    <p>Total: {{ total | currency }}</p>
+    </div>
+  </div>
+
+</div>

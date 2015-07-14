@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="six columns earnings">
+    <div class="heading">
+      <h4>My Earnings Info</h4>
+    </div>
+    <div class="earningsCounts">
+    <p>Tip Total: {{ tip_total | currency }}</p>
+    <p>Meal Count: {{ meal_count | number }}</p>
+    <p>Avg. Tip Per Meal: {{ average_tip | currency }}</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="two columns reset">
+      <button id="reset" ng-click="reset()">
+        Reset
+      </button>
+    </div>
+  </div>
+
+</div>
