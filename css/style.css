@@ -1,0 +1,115 @@
+body {
+  background-color: #FFE183;
+}
+
+h1 {
+  text-align: center;
+  background-color: #1AFF96;
+  border: 5px solid black;
+  font-family: 'Oswald', sans-serif;
+}
+
+.heading {
+  border-bottom: 5px solid black;
+  height: 50px;
+  background-color: #1AFF96;
+}
+
+h4 {
+  font-size: 1.6em;
+  text-align: center;
+  padding-top: 5px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.six {
+  border: 5px solid black;
+  height: 600px;
+  background-color: #FFF;
+}
+
+#form {
+  background-color: #FFF;
+  height: 200px;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px;
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+label {
+  color: #333;
+  height: 30px;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: right;
+  clear: both;
+  float:left;
+  margin-right:15px;
+}
+
+input {
+  height: 30px;
+  width: 100px;
+  border: 1px solid #000;
+  margin-top: 10px;
+  float: left;
+  font-size: 1em;
+}
+
+#submit, #cancel {
+  margin-top: 50px;
+  margin-right: 170px;
+  margin-left: 141px;
+}
+
+#submit, #cancel {
+  background-color: #33B252;
+  color: #fff;
+  width: 120px;
+  border: 2px solid black;
+}
+
+.earnings, .charges {
+  border: 5px solid black;
+  display: inline-block;
+  height: 275px;
+  float: right;
+  background-color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.earnings {
+  margin-top: 50px;
+}
+
+.customerCharges {
+  margin-top: 30px;
+}
+
+.earningsCounts {
+  margin-top: 30px;
+}
+
+p {
+  text-align: center;
+}
+
+.reset {
+  float: right;
+  margin-top: 40px;
+}
+
+#reset {
+  background-color: #33B252;
+  color: #fff;
+  width: 120px;
+  text-align: center;
+  border: 2px solid black;
+}
