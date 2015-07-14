@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="waitStaff" ng-controller="MyCtrl">
+<html lang="en" ng-app="waitStaff">
 <head>
 
   <!-- Basic Page Needs
@@ -23,11 +23,6 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <script data-require="angular.js@1.3.10" data-semver="1.3.10" src="https://code.angularjs.org/1.3.10/angular.js"></script>
-
 </head>
 <body>
 
@@ -35,80 +30,30 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 10%">
+      <div class="twelve columns" style="">
         <h1>WaitStaff Calculator</h1>
       </div>
     </div>
-
     <div class="row">
-      <div class="six columns details">
-        <div class="heading">
-          <h4>Enter the Meal Details</h4>
-        </div>
-
-        <div id="form">
-          <form name="myForm" novalidate class="meal_details" ng-submit="submit()">
-            <fieldset>
-
-                <label for="meal_price">Base Meal Price: $</label>
-                <input type="number" name="meal_price" ng-model="meal_price"  required ng-pattern="/^\d+$/"/>
-
-                <label for="tax_rate">Tax Rate: %</label>
-                <input type="number" name="tax_rate" ng-model="tax_rate" required ng-pattern="/^\d+$/"/>
-
-                <label for="tip_percentage">Tip Percentage: %</label>
-                <input type="number" name="tip_percentage" ng-model="tip_percentage" required ng-pattern="/^\d+$/"/>
-
-            </fieldset>
-
-                <span class="error" ng-if="myForm.$submitted && myForm.meal_price.$error.required">Please Only Enter Numbers</span>
-
-            <input type="submit" value="Submit" id="submit"/>
-
-            <input type="submit" value="Cancel" id="cancel" ng-click="cancel()">
-
-
-          </form>
-        </div>
-
-      </div>
-
-      <div class="six columns charges">
-        <div class="heading">
-          <h4>Customer Charges</h4>
-        </div>
-        <div class="customerCharges">
-        <p>Subtotal: {{ subtotal | currency }}</p>
-        <p>Tip: {{ tip | currency }}</p>
-        <p>Total: {{ total | currency }}</p>
-        </div>
-      </div>
-
-      <div class="six columns earnings">
-        <div class="heading">
-          <h4>My Earnings Info</h4>
-        </div>
-        <div class="earningsCounts">
-        <p>Tip Total: {{ tip_total | currency }}</p>
-        <p>Meal Count: {{ meal_count | number }}</p>
-        <p>Avg. Tip Per Meal: {{ average_tip | currency }}</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-      <div class="two columns reset">
-        <button id="reset" ng-click="reset()">
-          Reset
-        </button>
+      <div class="eight columns offset-by-two links">
+        <a href="#/home">HOME</a>
+        <span> | </span>
+        <a href="#/new-meal">NEW MEAL</a>
+        <span> | </span>
+        <a href="#/my-earnings">MY EARNINGS</a>
       </div>
     </div>
-
+      <div class="animate-view-container">
+        <div ng-view class="animate-view" ng-class="{loading: isLoading}"></div>
+      </div>
+    </div>
   </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="js/myApp.js"></script>
 </body>
 </html>

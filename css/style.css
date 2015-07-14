@@ -1,115 +1,272 @@
-body {
-  background-color: #FFE183;
+body
+{
+    background-color: #ffe183;
 }
 
-h1 {
-  text-align: center;
-  background-color: #1AFF96;
-  border: 5px solid black;
-  font-family: 'Oswald', sans-serif;
+h1
+{
+    font-family: 'Oswald', sans-serif;
+
+    margin-top: 5%;
+
+    text-align: center;
+
+    border: 5px solid black;
+    background-color: #1aff96;
 }
 
-.heading {
-  border-bottom: 5px solid black;
-  height: 50px;
-  background-color: #1AFF96;
+.links
+{
+    font-family: 'Oswald', sans-serif;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    border: 5px solid black;
+    background-color: #1aff96;
 }
 
-h4 {
-  font-size: 1.6em;
-  text-align: center;
-  padding-top: 5px;
-  font-family: 'Oswald', sans-serif;
+a
+{
+    margin-right: 20px;
+    margin-left: 20px;
+
+    text-decoration: none;
+
+    color: inherit;
 }
 
-.six {
-  border: 5px solid black;
-  height: 600px;
-  background-color: #FFF;
+#instructions
+{
+    font-family: 'Open Sans', sans-serif;
+
+    margin-top: 30px;
+    padding: 20px;
+
+    border: 5px solid black;
+    background-color: #fff;
 }
 
-#form {
-  background-color: #FFF;
-  height: 200px;
-  width: 400px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 0px;
-  text-align:center;
-  font-family: 'Open Sans', sans-serif;
+.heading
+{
+    height: 50px;
+
+    border-bottom: 5px solid black;
+    background-color: #1aff96;
 }
 
-label {
-  color: #333;
-  height: 30px;
-  width: 200px;
-  margin-top: 10px;
-  margin-left: 10px;
-  text-align: right;
-  clear: both;
-  float:left;
-  margin-right:15px;
+h4
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+
+    padding-top: 5px;
+
+    text-align: center;
 }
 
-input {
-  height: 30px;
-  width: 100px;
-  border: 1px solid #000;
-  margin-top: 10px;
-  float: left;
-  font-size: 1em;
+.details
+{
+    height: 600px;
+    margin-top: 30px;
+
+    border: 5px solid black;
+    background-color: #fff;
 }
 
-#submit, #cancel {
-  margin-top: 50px;
-  margin-right: 170px;
-  margin-left: 141px;
+#form
+{
+    font-family: 'Open Sans', sans-serif;
+
+    width: 400px;
+    height: 200px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+
+    text-align: center;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
 }
 
-#submit, #cancel {
-  background-color: #33B252;
-  color: #fff;
-  width: 120px;
-  border: 2px solid black;
+label
+{
+    float: left;
+    clear: both;
+
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+
+    text-align: right;
+
+    color: #333;
 }
 
-.earnings, .charges {
-  border: 5px solid black;
-  display: inline-block;
-  height: 275px;
-  float: right;
-  background-color: #FFF;
-  font-family: 'Open Sans', sans-serif;
+input
+{
+    font-size: 1em;
+
+    float: left;
+
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+
+    border: 1px solid #000;
 }
 
-.earnings {
-  margin-top: 50px;
+#submit,
+#cancel
+{
+    margin-top: 50px;
+    margin-right: 170px;
+    margin-left: 141px;
 }
 
-.customerCharges {
-  margin-top: 30px;
+#submit,
+#cancel
+{
+    width: 120px;
+
+    color: #fff;
+    border: 2px solid black;
+    background-color: #33b252;
 }
 
-.earningsCounts {
-  margin-top: 30px;
+.charges
+{
+    font-family: 'Open Sans', sans-serif;
+
+    display: inline-block;
+    float: right;
+
+    height: 275px;
+    margin-top: 30px;
+
+    border: 5px solid black;
+    background-color: #fff;
 }
 
-p {
-  text-align: center;
+.earnings
+{
+    font-family: 'Open Sans', sans-serif;
+
+    display: inline-block;
+
+    height: 275px;
+    margin-top: 30px;
+
+    border: 5px solid black;
+    background-color: #fff;
 }
 
-.reset {
-  float: right;
-  margin-top: 40px;
+.customerCharges
+{
+    margin-top: 30px;
 }
 
-#reset {
-  background-color: #33B252;
-  color: #fff;
-  width: 120px;
-  text-align: center;
-  border: 2px solid black;
+.earningsCounts
+{
+    margin-top: 30px;
+}
+
+p
+{
+    text-align: center;
+}
+
+.reset
+{
+    margin-top: 40px;
+}
+
+#reset
+{
+    width: 120px;
+
+    text-align: center;
+
+    color: #fff;
+    border: 2px solid black;
+    background-color: #33b252;
+}
+
+body,
+html
+{
+    position: relative;
+
+    min-height: 100%;
+}
+
+.loading
+{
+    position: relative;
+
+    height: 100%;
+}
+
+.loading:before
+{
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    background: rgba(255,255,255,.9) no-repeat center center;
+    background-image: url('../images/loading-animation.gif');
+}
+
+.animate-view-container
+{
+    position: relative;
+
+    min-height: 100%;
+}
+
+.animate-view.ng-enter,
+.animate-view.ng-leave
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    transition: 1s linear all; background: #eee;
+}
+
+.animate-view.ng-enter
+{
+    z-index: 100;
+
+    opacity: 0;
+}
+
+.animate-view.ng-enter.ng-enter-active
+{
+    opacity: 1;
+}
+
+.animate-view.ng-leave
+{
+    z-index: 99;
+
+    opacity: 1;
+}
+
+.animate-view.ng-leave.ng-leave-active
+{
+    opacity: 0;
 }
